@@ -14,6 +14,11 @@
         <link rel="stylesheet" href="/styles.css">
         
         <link rel="icon" href="/img/Logo.svg">
+
+        <script defer>
+            const produtoInteresse = 'Angular 11 e Firebase';
+        </script>
+
         <title>AluraBooks</title>
     </head>
     <body>
@@ -26,27 +31,29 @@
                 <ul class="lista-menu">
                     <li class="lista-menu__titulo">Categorias</li>
                     <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Programação</a>
+                        <a href="/categorias/programacao.html" class="lista-menu__link">Programação</a>
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Front-end</a>
+                        <a href="/categorias/front-end.html" class="lista-menu__link">Front-end</a>
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Infraestrutura</a>
+                        <a href="/categorias/infraestrutura.html" class="lista-menu__link">Infraestrutura</a>
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Business</a>
+                        <a href="/categorias/business.html" class="lista-menu__link">Business</a>
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Design & UX</a>
+                        <a href="/categorias/design-ux.html" class="lista-menu__link">Design & UX</a>
                     </li>
                 </ul>
-                <img src="/img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+                <a href="/">
+                    <img src="/img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+                </a>
             </div>
             <div class="container">
-                <a href="#"><img src="/img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
-                <a href="#"><img src="/img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
-                <a href="#"><img src="/img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+                <a href="/favoritos.html"><img src="/img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+                <a href="/compras.html"><img src="/img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
+                <a href="/perfil.html"><img src="/img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
             </div>
         </header>
 
@@ -92,11 +99,23 @@
                     <div class="card__botoes">
                         <!-- 1ª coluna -->
                         <ul class="botoes">
-                            <li class="botoes__item"><img src="/img/Favoritos.svg" alt="Favoritar livro"></li>
-                            <li class="botoes__item"><img src="/img/Compras.svg" alt="Adcionar no carrinho de compras"></li>
+                            <li class="botoes__item">
+                                <button type="button" onclick="
+                                    console.log(`${produtoInteresse} favoritado.`)
+                                ">
+                                    <img src="/img/Favoritos.svg" alt="Favoritar livro">
+                                </button>
+                            </li>
+                            <li class="botoes__item">
+                                <button type="button" onclick="
+                                        console.log(`${produtoInteresse} adcionado ao carrinho de compras.`)
+                                    ">
+                                    <img src="/img/Compras.svg" alt="Adcionar no carrinho de compras">
+                                </button>
+                            </li>
                         </ul>
                         <!-- 2ª coluna -->
-                        <a href="#" class="card__botoes__ancora">Saiba mais</a>
+                        <a href="/produtos/livros/angular-11-e-firebase.html" class="card__botoes__ancora">Saiba mais</a>
                     </div>
                 </div>
 

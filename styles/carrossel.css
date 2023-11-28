@@ -96,6 +96,12 @@
     margin: 0rem 0.625rem ; /* 0px 10px */
 }
 
+.botoes__item >button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .card__botoes__ancora {
     background-color: var(--laranja);
     color: var(--branco);
