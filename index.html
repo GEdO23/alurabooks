@@ -122,6 +122,80 @@
             </div>
         </section>
 
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
+            <div class="carrossel__content">
+                <div class="swiper">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/img/carrossel/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                        <div class="swiper-slide"><img src="/img/carrossel/Liderança.svg" alt="Livro sobre liderança em design da alura books"></div>
+                        <div class="swiper-slide"><img src="/img/carrossel/Javascript.svg" alt="Livro sobre Javascript assertivo da alura books"></div>
+                        <div class="swiper-slide"><img src="/img/carrossel/Guia Front-end.svg" alt="Livro Guia front end da alura books"></div>
+                        <div class="swiper-slide"><img src="/img/carrossel/Portugol.svg" alt="Livro sobre Portugol da alura books"></div>
+                        <div class="swiper-slide"><img src="/img/carrossel/Acessibilidade.svg" alt="Livro sobre Acessibilidade da alura books"></div>
+                    </div>
+                    <div class="swiper-button-prev swiper-button"></div>
+                    <div class="swiper-button-next swiper-button"></div>
+                </div>
+    
+                <div class="card">
+                    <!-- 1ª linha -->
+                    <div class="card__descricao">
+                        <!-- 1ª coluna -->
+                        <div class="descricao">
+                            <ul class="rating">
+                                <li class="rating__item">
+                                    <img class="rating__star" src="/img/Star.svg" alt="Estrela">
+                                </li>
+                                <li class="rating__item">
+                                    <img class="rating__star" src="/img/Star.svg" alt="Estrela">
+                                </li>
+                                <li class="rating__item">
+                                    <img class="rating__star" src="/img/Star.svg" alt="Estrela">
+                                </li>
+                                <li class="rating__item">
+                                    <img class="rating__star" src="/img/Star.svg" alt="Estrela">
+                                </li>
+                                <li class="rating__item">
+                                    <img class="rating__star" src="/img/Star.svg" alt="Estrela">
+                                </li>
+                            </ul>
+                            <h3 class="descricao__titulo">Autora do Mês</h3>
+                            <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                            <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                        </div>
+                        <!-- 2ª coluna -->
+                        <img src="/img/Perfil-escritora.svg" alt="Foto da Juliana Agarikov: mulher jovem negra sorrindo, com cabelo escuro trançado, vestindo uma roupa laranja" class="card__descricao__imagem">
+                    </div>
+                    
+                    <!-- 2ª linha -->
+                    <div class="card__botoes">
+                        <!-- 1ª coluna -->
+                        <ul class="botoes">
+                            <li class="botoes__item">
+                                <button type="button" onclick="
+                                    console.log(`${produtoInteresse} favoritado.`)
+                                ">
+                                    <img src="/img/Favoritos.svg" alt="Favoritar livro">
+                                </button>
+                            </li>
+                            <li class="botoes__item">
+                                <button type="button" onclick="
+                                        console.log(`${produtoInteresse} adcionado ao carrinho de compras.`)
+                                    ">
+                                    <img src="/img/Compras.svg" alt="Adcionar no carrinho de compras">
+                                </button>
+                            </li>
+                        </ul>
+                        <!-- 2ª coluna -->
+                        <a href="/produtos/livros/angular-11-e-firebase.html" class="card__botoes__ancora">Saiba mais</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper('.swiper', {
