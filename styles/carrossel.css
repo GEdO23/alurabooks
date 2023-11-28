@@ -8,18 +8,41 @@
     text-transform: uppercase;
 }
 
+.swiper {
+    max-width: 630px;
+}
+
 .swiper-slide img {
     width: 100%;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    display: none;
+.swiper-button {
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--azul-degrade);
+    border-radius: 100%;
+    transition: .5s ease-in-out;
+}
+
+.swiper-button::after {
+    font-size: 0.75rem;
+    font-weight: 700;
 }
 
 .swiper-pagination {
     position: initial;
     margin: 0.75rem 0rem 1rem 0rem; /* 12px 0px 16px 0px*/
+}
+
+.carrossel__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 
