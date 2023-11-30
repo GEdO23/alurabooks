@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    z-index: 100;
 }
 
 .cabecalho__container {
@@ -23,16 +24,23 @@
     width: 36px;
 }
 
+#menu:checked ~ #menu__lista {
+    display: block;
+}
+
 #menu__lista {
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+    border-right: 1px solid rgba(0, 0, 0, .25);
     display: none;
     position: absolute;
     top: 100%;
     width: 70vw;
-    z-index: 100;
+    z-index: 90;
 }
 
-#menu:checked ~ #menu__lista {
-    display: block;
+#menu__lista__titulo {
+    color: var(--laranja);
+    font-weight: 700;
 }
 
 #menu__lista__titulo, 
@@ -41,11 +49,10 @@
     padding: 1rem;
 }
 
-.menu__lista__item {
-    color: var(--laranja);
-    font-weight: 700;
-}
-
 .menu__lista__link {
+    background: var(--azul-degrade);
+    background-clip: text;
     text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

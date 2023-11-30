@@ -3,7 +3,7 @@
     background: var(--azul-degrade);
     display: flex;
     flex-direction: column;
-    padding: 2rem 0rem; /* 32px 0px */
+    padding: 2rem 0rem;
     text-align: center;
 }
 
@@ -17,7 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 600px;
+    max-width: 37.5rem;
 }
 
 .topicos__item {
@@ -27,14 +27,9 @@
 .topicos__link {
     background-color: var(--laranja);
     color: var(--branco);
-    padding: 1rem 1.5rem; /* 16px 24px */
-    font-size: 0.875rem; /* 14px */
+    padding: 1rem 1.5rem;
+    font-size: 0.875rem;
     font-weight: 700;
-    line-height: 1.3125rem; /* 21px */
+    line-height: 1.3125rem;
     text-decoration: none;
-}
-
-.rating {
-    display: flex;
-    gap: 4px;
 }

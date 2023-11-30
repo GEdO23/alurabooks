@@ -22,6 +22,7 @@
         <title>AluraBooks</title>
     </head>
     <body>
+
         <header id="cabecalho">
             <div class="cabecalho__container">
                 <!-- Menu -->
@@ -35,19 +36,19 @@
                     <li id="menu__lista__titulo">Categorias</li>
 
                     <li class="menu__lista__item">
-                        <a href="#" class="menu__lista__link texto-degrade">Programação</a>
+                        <a href="#" class="menu__lista__link">Programação</a>
                     </li>
                     <li class="menu__lista__item">
-                        <a href="#" class="menu__lista__link texto-degrade">Front-end</a>
+                        <a href="#" class="menu__lista__link">Front-end</a>
                     </li>
                     <li class="menu__lista__item">
-                        <a href="#" class="menu__lista__link texto-degrade">Infraestrutura</a>
+                        <a href="#" class="menu__lista__link">Infraestrutura</a>
                     </li>
                     <li class="menu__lista__item">
-                        <a href="#" class="menu__lista__link texto-degrade">Business</a>
+                        <a href="#" class="menu__lista__link">Business</a>
                     </li>
                     <li class="menu__lista__item">
-                        <a href="#" class="menu__lista__link texto-degrade">Design & UX</a>
+                        <a href="#" class="menu__lista__link">Design & UX</a>
                     </li>
                 </ul>
                 
@@ -57,36 +58,30 @@
             
             <ul class="cabecalho__container">
                 <li>
-                    <a href="#">
-                        <img src="/img/Favoritos.svg" alt="Meus favoritos" class="imagem">
-                    </a>
+                    <a href="#"><img src="/img/Favoritos.svg" alt="Meus favoritos" class="imagem"></a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="/img/Compras.svg" alt="Carrinho de compras" class="imagem">
-                    </a>
+                    <a href="#"><img src="/img/Compras.svg" alt="Carrinho de compras" class="imagem"></a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="/img/Usuario.svg" alt="Meu perfil" class="imagem">
-                    </a>
+                    <a href="#"><img src="/img/Usuario.svg" alt="Meu perfil" class="imagem"></a>
                 </li>
             </ul>
         </header>
         
-        <main id="main">
+        <main id="index-main">
             <section class="banner">
                 <div class="banner__text-container">
                     <h2 class="banner__titulo">Já sabe por onde começar?</h2>
                     <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
                 </div>
-                <input class="banner__pesquisa" type="search" placeholder="Qual será sua próxima leitura?">
+                <input class="banner__pesquisa" type="search" placeholder="Qual será sua próxima leitura?" />
             </section>
 
-            <section class="carrossel">
-                <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
-                <div class="carrossel__content">
-                    <div class="swiper">
+            <div class="publicidade">
+                <h2 class="publicidade__titulo">ÚLTIMOS LANÇAMENTOS</h2>
+                <div class="publicidade__conteudo">
+                    <section class="swiper">
                         <div class="swiper-pagination"></div>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="/img/carrossel/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
@@ -98,149 +93,108 @@
                         </div>
                         <div class="swiper-button-prev swiper-button"></div>
                         <div class="swiper-button-next swiper-button"></div>
-                    </div>
-        
-                    <div class="card">
-                        <!-- 1ª linha -->
+                    </section>
+                    <section class="card">
                         <div class="card__descricao">
-                            <!-- 1ª coluna -->
-                            <div class="descricao">
-                                <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
-                                <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
-                                <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                            <div>
+                                <h3 class="card__descricao__titulo">Talvez você também se interesse por...</h3>
+                                <h2 class="card__descricao__subtitulo">Angular 11 e Firebase</h2>
+                                <p class="card__descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
                             </div>
-                            <!-- 2ª coluna -->
-                            <img src="/img/Angular.svg" alt="Angular" class="card__descricao__imagem">
+                            <img src="/img/Angular.svg" alt="Angular" class="card__descricao__imagem"/>
+                            
                         </div>
                         
-                        <!-- 2ª linha -->
                         <div class="card__botoes">
-                            <!-- 1ª coluna -->
-                            <ul class="botoes">
-                                <li class="botoes__item">
-                                    <button type="button" onclick="
-                                        console.log(`${produtoInteresse} favoritado.`)
-                                    ">
-                                        <img src="/img/Favoritos.svg" alt="Favoritar livro">
-                                    </button>
+                            <ul class="card__botoes__btn-container">
+                                <li class="card__botoes__item">
+                                    <button type="button"><img src="/img/Favoritos.svg" alt="Favoritar livro" /></button>
                                 </li>
-                                <li class="botoes__item">
-                                    <button type="button" onclick="
-                                            console.log(`${produtoInteresse} adcionado ao carrinho de compras.`)
-                                        ">
-                                        <img src="/img/Compras.svg" alt="Adcionar no carrinho de compras">
-                                    </button>
+                                <li class="card__botoes__item">
+                                    <button type="button"><img src="/img/Compras.svg" alt="Adcionar no carrinho de compras" /></button>
                                 </li>
                             </ul>
-                            <!-- 2ª coluna -->
                             <a href="#" class="card__botoes__ancora">Saiba mais</a>
                         </div>
-                    </div>
-
+                    </section>
                 </div>
-            </section>
+            </div>
 
-            <section class="carrossel">
-                <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
-                <div class="carrossel__content">
-                    <div class="swiper">
+            <div class="publicidade">
+                <h2 class="publicidade__titulo">MAIS VENDIDOS</h2>
+                <div class="publicidade__conteudo">
+                    <section class="swiper">
                         <div class="swiper-pagination"></div>
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="/img/carrossel/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
-                            <div class="swiper-slide"><img src="/img/carrossel/Liderança.svg" alt="Livro sobre liderança em design da alura books"></div>
-                            <div class="swiper-slide"><img src="/img/carrossel/Javascript.svg" alt="Livro sobre Javascript assertivo da alura books"></div>
-                            <div class="swiper-slide"><img src="/img/carrossel/Guia Front-end.svg" alt="Livro Guia front end da alura books"></div>
-                            <div class="swiper-slide"><img src="/img/carrossel/Portugol.svg" alt="Livro sobre Portugol da alura books"></div>
-                            <div class="swiper-slide"><img src="/img/carrossel/Acessibilidade.svg" alt="Livro sobre Acessibilidade da alura books"></div>
+                            <div class="swiper-slide">
+                                <img src="/img/carrossel/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="/img/carrossel/Liderança.svg" alt="Livro sobre liderança em design da alura books">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="/img/carrossel/Javascript.svg" alt="Livro sobre Javascript assertivo da alura books">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="/img/carrossel/Guia Front-end.svg" alt="Livro Guia front e'nd da alura books">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="/img/carrossel/Portugol.svg" alt="Livro sobre Portugol da alura books">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="/img/carrossel/Acessibilidade.svg" alt="Livro sobre Acessibilidade da alura books">
+                            </div>
+                            
                         </div>
                         <div class="swiper-button-prev swiper-button"></div>
                         <div class="swiper-button-next swiper-button"></div>
-                    </div>
+                    </section>
         
-                    <div class="card">
-                        <!-- 1ª linha -->
+                    <section class="card">
                         <div class="card__descricao">
-                            <!-- 1ª coluna -->
-                            <div class="descricao">
+                            <div>
                                 <ul class="rating">
-                                    <li class="rating__item">
-                                        <img class="rating__star" src="/img/Star.svg" alt="Estrela">
-                                    </li>
-                                    <li class="rating__item">
-                                        <img class="rating__star" src="/img/Star.svg" alt="Estrela">
-                                    </li>
-                                    <li class="rating__item">
-                                        <img class="rating__star" src="/img/Star.svg" alt="Estrela">
-                                    </li>
-                                    <li class="rating__item">
-                                        <img class="rating__star" src="/img/Star.svg" alt="Estrela">
-                                    </li>
-                                    <li class="rating__item">
-                                        <img class="rating__star" src="/img/Star.svg" alt="Estrela">
-                                    </li>
+                                    <li><img src="/img/Star.svg" alt="Estrela"></li>
+                                    <li><img src="/img/Star.svg" alt="Estrela"></li>
+                                    <li><img src="/img/Star.svg" alt="Estrela"></li>
+                                    <li><img src="/img/Star.svg" alt="Estrela"></li>
+                                    <li><img src="/img/Star.svg" alt="Estrela"></li>
                                 </ul>
-                                <h3 class="descricao__titulo">Autora do Mês</h3>
-                                <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
-                                <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                                <h3 class="card__descricao__titulo">Autora do Mês</h3>
+                                <h2 class="card__descricao__subtitulo">Juliana Agarikov</h2>
+                                <p class="card__descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
                             </div>
-                            <!-- 2ª coluna -->
-                            <img src="/img/Perfil-escritora.svg" alt="Foto da Juliana Agarikov: mulher jovem negra sorrindo, com cabelo escuro trançado, vestindo uma roupa laranja" class="card__descricao__imagem">
+                            <img src="/img/Perfil-escritora.svg" alt="Foto da Juliana Agarikov: mulher jovem negra sorrindo, com cabelo escuro trançado, vestindo uma roupa laranja" class="card__descricao__imagem"/>
                         </div>
                         
-                        <!-- 2ª linha -->
                         <div class="card__botoes">
-                            <!-- 1ª coluna -->
-                            <ul class="botoes">
-                                <li class="botoes__item">
-                                    <button type="button" onclick="
-                                        console.log(`${produtoInteresse} favoritado.`)
-                                    ">
-                                        <img src="/img/Favoritos.svg" alt="Favoritar livro">
-                                    </button>
-                                </li>
-                                <li class="botoes__item">
-                                    <button type="button" onclick="
-                                            console.log(`${produtoInteresse} adcionado ao carrinho de compras.`)
-                                        ">
-                                        <img src="/img/Compras.svg" alt="Adcionar no carrinho de compras">
-                                    </button>
+                            <ul class="card__botoes__btn-container">
+                                <li class="card__botoes__item">
+                                    <button type="button"><img src='/img/Favoritos.svg' alt='Favoritar livro' /></button>
                                 </li>
                             </ul>
-                            <!-- 2ª coluna -->
                             <a href="#" class="card__botoes__ancora">Saiba mais</a>
                         </div>
-                    </div>
-
+                    </section>
                 </div>
-            </section>
+            </div>
 
             <section class="topicos">
                 <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
                 <ul class="topicos__lista">
-                    <li class="topicos__item">
-                        <a href="#" class="topicos__link">Android</a>
-                    </li>
-                    <li class="topicos__item">
-                        <a href="#" class="topicos__link">Marketing Digital</a>
-                    </li>
-                    <li class="topicos__item">
-                        <a href="#" class="topicos__link">Agile</a>
-                    </li>
-                    <li class="topicos__item">
-                        <a href="#" class="topicos__link">Startups</a>
-                    </li>
-                    <li class="topicos__item">
-                        <a href="#" class="topicos__link">HTML & CSS</a>
-                    </li>
-                    <li class="topicos__item">
-                        <a href="#" class="topicos__link">Python</a>
-                    </li>
-                    <li class="topicos__item">
-                        <a href="#" class="topicos__link">OO</a>
-                    </li>
-                    <li class="topicos__item">
-                        <a href="#" class="topicos__link">Java</a>
-                    </li>
+                    <li class="topicos__item"><a href="#" class="topicos__link">Android</a></li>
+                    <li class="topicos__item"><a href="#" class="topicos__link">Marketing Digital</a></li>
+                    <li class="topicos__item"><a href="#" class="topicos__link">Agile</a></li>
+                    <li class="topicos__item"><a href="#" class="topicos__link">Startups</a></li>
+                    <li class="topicos__item"><a href="#" class="topicos__link">HTML & CSS</a></li>
+                    <li class="topicos__item"><a href="#" class="topicos__link">Python</a></li>
+                    <li class="topicos__item"><a href="#" class="topicos__link">OO</a></li>
+                    <li class="topicos__item"><a href="#" class="topicos__link">Java</a></li>
                 </ul>
             </section>
 
@@ -249,7 +203,7 @@
                     <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
                     <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
                 </div>
-                <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+                <input class="contato__email" type="email" placeholder="Cadastre seu e-mail" />
             </section>
         </main>
 
