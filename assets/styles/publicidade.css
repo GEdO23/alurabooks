@@ -1,0 +1,16 @@
+.publicidade__titulo {
+    background-color: var(--branco);
+    color: var(--laranja);
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 1.25rem 0rem 0.5rem 0rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.publicidade__conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: center;
+}
