@@ -3,14 +3,14 @@
     background: var(--azul-degrade);
     display: flex;
     flex-direction: column;
-    padding: 2rem 0rem;
+    padding: var(--text-4xl) 0;
     text-align: center;
 }
 
 .topicos__titulo {
     color: var(--branco);
     font-weight: 300;
-    padding-bottom: 1rem;
+    padding-bottom: var(--text-base);
 }
 
 .topicos__lista {
@@ -21,15 +21,15 @@
 }
 
 .topicos__item {
-    margin: 1.5rem 0.5rem;
+    margin: var(--text-2xl) var(--text-2xs);
 }
 
 .topicos__link {
     background-color: var(--laranja);
     color: var(--branco);
-    padding: 1rem 1.5rem;
-    font-size: 0.875rem;
+    padding: var(--text-base) var(--text-2xl);
+    font-size: var(--text-sm);
     font-weight: 700;
-    line-height: 1.3125rem;
+    line-height: var(--text-xl);
     text-decoration: none;
 }

@@ -32,7 +32,7 @@
 #menu__lista__titulo, 
 .menu__lista__item {
     background: var(--branco);
-    padding: 1rem;
+    padding:var(--text-base);
 }
 
 .menu__lista__link {

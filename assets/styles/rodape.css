@@ -3,7 +3,7 @@
     border-top: 1px solid var(--cinza);
     display: flex;
     justify-content: space-between;
-    padding: 1.0625rem 3.125rem 1.5rem 1.5rem;
+    padding: var(--text-base) 3.125rem var(--text-2xl) var(--text-2xl);
 }
 
 #rodape__grupos {

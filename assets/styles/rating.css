@@ -1,4 +1,4 @@
 .rating {
     display: flex;
-    gap: 0.25rem;
+    gap: var(--text-3xs);
 }
