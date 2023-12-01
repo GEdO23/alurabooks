@@ -1,3 +1,5 @@
+@import url('./cabecalho-container.css');
+
 #cabecalho {
     align-items: center;
     background: var(--branco);
@@ -5,9 +7,4 @@
     justify-content: space-between;
     position: relative;
     z-index: 100;
-}
-
-.cabecalho__container {
-    align-items: center;
-    display: flex;
 }

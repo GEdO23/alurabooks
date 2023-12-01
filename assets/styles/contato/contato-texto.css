@@ -1,0 +1,7 @@
+.contato__texto {
+    background: var(--azul-degrade);
+    background-clip: text;
+    font-weight: 300;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

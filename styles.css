@@ -1,15 +1,15 @@
 @import url('/assets/styles/imagem.css');
-@import url('/assets/styles/cabecalho.css');
-@import url('/assets/styles/menu.css');
-@import url('/assets/styles/banner.css');
-@import url('/assets/styles/publicidade.css');
-@import url('/assets/styles/swiper.css');
-@import url('/assets/styles/card.css');
+@import url('/assets/styles/cabecalho/cabecalho.css');
+@import url('/assets/styles/menu/menu.css');
+@import url('/assets/styles/banner/banner.css');
+@import url('/assets/styles/publicidade/publicidade.css');
+@import url('/assets/styles/swiper/swiper.css');
 @import url('/assets/styles/rating.css');
-@import url('/assets/styles/topicos.css');
-@import url('/assets/styles/contato.css');
-@import url('/assets/styles/rodape.css');
-@import url('/assets/styles/grupo.css');
+@import url('/assets/styles/card/card.css');
+@import url('/assets/styles/topicos/topicos.css');
+@import url('/assets/styles/contato/contato.css');
+@import url('/assets/styles/rodape/rodape.css');
+@import url('/assets/styles/grupo/grupo.css');
 
 :root {
     --azul: #002F52;

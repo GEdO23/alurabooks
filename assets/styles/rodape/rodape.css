@@ -1,11 +1,9 @@
+@import url('./rodape-grupos.css');
+
 #rodape {
     background: #F9F9F9;
     border-top: 1px solid var(--cinza);
     display: flex;
     justify-content: space-between;
     padding: var(--text-base) 3.125rem var(--text-2xl) var(--text-2xl);
-}
-
-#rodape__grupos {
-    display: none;
 }

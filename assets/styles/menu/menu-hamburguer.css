@@ -1,0 +1,10 @@
+#menu__hamburguer {
+    background: url('/assets/img/Menu.svg') no-repeat center;
+    display: inline-block;
+    height: 24px;
+    width: 36px;
+}
+
+#menu__hamburguer::before {
+    display: none;
+}

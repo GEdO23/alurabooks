@@ -1,0 +1,9 @@
+.topicos__link {
+    background-color: var(--laranja);
+    color: var(--branco);
+    padding: var(--text-base) var(--text-2xl);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    line-height: var(--text-xl);
+    text-decoration: none;
+}

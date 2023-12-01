@@ -1,0 +1,6 @@
+.contato__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--text-2xs);
+    max-width: 300px;
+}

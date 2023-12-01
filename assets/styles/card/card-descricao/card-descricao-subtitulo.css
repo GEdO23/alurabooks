@@ -1,0 +1,8 @@
+.card__descricao__subtitulo {
+    background: var(--azul-degrade);
+    background-clip: text;
+    font-size: var(--text-lg);
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

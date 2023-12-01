@@ -1,0 +1,9 @@
+#menu__lista__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+#menu__lista__titulo {
+    background: var(--branco);
+    padding:var(--text-base);
+}

@@ -1,0 +1,15 @@
+@import url('./banner-textContainer.css');
+@import url('./banner-titulo.css');
+@import url('./banner-texto.css');
+@import url('./banner-pesquisa.css');
+
+.banner {
+    align-items: center;
+    background: var(--azul-degrade);
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    gap: var(--text-2xl);
+    padding: var(--text-4xl) var(--text-2xl);
+    text-align: center;
+}

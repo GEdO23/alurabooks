@@ -1,0 +1,11 @@
+@import url('./card-descricao/card-descricao.css');
+@import url('./card-botoes/card-botoes.css');
+
+.card {
+    background: var(--branco);
+    border-radius: var(--text-1xs);
+    box-shadow: 0 var(--text-3xs) var(--text-3xs) rgba(0, 0, 0, 0.25);
+    margin: var(--text-xl) var(--text-2xl);
+    padding: var(--text-base);
+    padding-bottom: var(--text-2xl);
+}

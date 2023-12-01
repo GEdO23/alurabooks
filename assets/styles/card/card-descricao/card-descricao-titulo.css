@@ -1,0 +1,4 @@
+.card__descricao__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}

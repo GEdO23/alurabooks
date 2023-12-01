@@ -1,0 +1,4 @@
+.menu__lista__item {
+    background: var(--branco);
+    padding:var(--text-base);
+}

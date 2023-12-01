@@ -1,0 +1,4 @@
+.card__descricao__texto {
+    color: #262626;
+    font-size: var(--text-sm);
+}

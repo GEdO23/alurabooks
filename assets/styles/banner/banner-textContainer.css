@@ -1,0 +1,6 @@
+.banner__text-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--text-2xs);
+}

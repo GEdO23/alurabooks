@@ -1,0 +1,9 @@
+@import url('./card-botoes-btnContainer.css');
+@import url('./card-botoes-item.css');
+@import url('./card-botoes-ancora.css');
+
+.card__botoes {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}

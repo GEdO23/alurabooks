@@ -1,0 +1,5 @@
+.card__botoes__btn-container {
+    align-items: center;
+    display: flex;
+    gap: var(--text-3xs);
+}
