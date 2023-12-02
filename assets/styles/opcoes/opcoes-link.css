@@ -1,0 +1,6 @@
+@media screen and (min-width: 1024px) {
+    .opcoes__link {
+        color: var(--preto);
+        text-decoration: none;
+    }
+}
