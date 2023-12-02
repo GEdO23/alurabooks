@@ -1,6 +1,7 @@
 @import url('/assets/styles/imagem.css');
 @import url('/assets/styles/cabecalho/cabecalho.css');
 @import url('/assets/styles/menu/menu.css');
+@import url('/assets/styles/logo.css');
 @import url('/assets/styles/banner/banner.css');
 @import url('/assets/styles/publicidade/publicidade.css');
 @import url('/assets/styles/swiper/swiper.css');
@@ -18,8 +19,10 @@
     --cinza: #858585;
     --cor-de-fundo: #EBECEE;
     --laranja: #EB9B00;
+    --preto: #000;
     
-    --font-principal: 'Poppins';
+    --font-principal: 'Poppins', sans-serif;
+    --font-secundaria: 'Josefin Sans', sans-serif;
 
     --text-3xs: 0.25rem; /* 4px */
     --text-2xs: 0.5rem; /* 8px */
@@ -35,6 +38,7 @@
 
 body {
     background-color: var(--cor-de-fundo);
+    color: var(--preto);
     font-family: var(--font-principal);
     font-size: var(--text-base);
     font-weight: 400;

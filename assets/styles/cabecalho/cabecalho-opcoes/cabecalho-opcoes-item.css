@@ -1,0 +1,7 @@
+@media screen and (min-width: 1024px) {
+    .cabecalho__opcoes__item {
+        padding: var(--text-1xs);
+        padding-right: 2rem;
+        text-transform: uppercase;
+    }
+}

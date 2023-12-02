@@ -1,0 +1,18 @@
+.cabecalho__titulo {
+    display: none;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__titulo {
+        display: inline;
+        font-family: var(--font-secundaria);
+        font-size: 1.875rem;
+        font-weight: 400;
+        padding-bottom: 0.125rem;
+    }
+
+    .cabecalho__titulo--destaque {
+        font-weight: 700;
+    }
+}

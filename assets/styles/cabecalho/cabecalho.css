@@ -1,4 +1,6 @@
 @import url('./cabecalho-container.css');
+@import url('./cabecalho-titulo.css');
+@import url('./cabecalho-opcoes/cabecalho-opcoes.css');
 
 #cabecalho {
     align-items: center;
@@ -8,3 +10,10 @@
     position: relative;
     z-index: 100;
 }
+
+@media screen and (min-width: 1024px) {
+    #cabecalho {
+        padding: var(--text-lg) 5rem;
+    }
+}
+
