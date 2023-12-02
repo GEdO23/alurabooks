@@ -15,6 +15,7 @@
 @media screen and (min-width: 1024px) {
     .swiper-pagination {
         margin: 2rem 0;
+        margin-bottom: 4.75rem;
     }
 
     .swiper-pagination-bullet {

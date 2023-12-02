@@ -3,3 +3,9 @@
     display: flex;
     gap: var(--text-3xs);
 }
+
+@media screen and (min-width: 1024px) {
+    .card__botoes__btn-container {
+        gap: var(--text-sm);
+    }
+}
