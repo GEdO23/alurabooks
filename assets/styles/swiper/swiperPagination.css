@@ -2,3 +2,23 @@
     position: initial;
     margin: var(--text-xs) 0 var(--text-base) 0;
 }
+
+.swiper-pagination-bullet {
+    width: var(--text-2xs);
+    height: var(--text-2xs);
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--azul-degrade);
+}
+
+@media screen and (min-width: 1024px) {
+    .swiper-pagination {
+        margin: 2rem 0;
+    }
+
+    .swiper-pagination-bullet {
+        width: var(--text-xs);
+        height: var(--text-xs);
+    }
+}
