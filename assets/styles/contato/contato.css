@@ -1,0 +1,13 @@
+@import url('./contato-textContainer.css');
+@import url('./contato-titulo.css');
+@import url('./contato-texto.css');
+@import url('./contato-email.css');
+
+.contato {
+    background: var(--branco);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--text-2xl);
+    justify-content: center;
+    padding: var(--text-2xl);
+}

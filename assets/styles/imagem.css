@@ -1,0 +1,9 @@
+.imagem {
+    padding:var(--text-base);
+}
+
+@media screen and (min-width: 1024px) {
+    .imagem {
+        padding: 0;
+    }
+}

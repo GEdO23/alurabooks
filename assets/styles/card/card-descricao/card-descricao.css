@@ -1,0 +1,11 @@
+@import url('./card-descricao-titulo.css');
+@import url('./card-descricao-subtitulo.css');
+@import url('./card-descricao-texto.css');
+@import url('./card-descricao-imagem.css');
+
+.card__descricao {
+    display: flex;
+    gap: var(--text-2xl);
+    justify-content: space-between;
+    margin-bottom: var(--text-3xs);
+}

@@ -1,0 +1,9 @@
+.publicidade__titulo {
+    background-color: var(--branco);
+    color: var(--laranja);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    padding: var(--text-xl) 0 var(--text-2xs) 0;
+    text-align: center;
+    text-transform: uppercase;
+}

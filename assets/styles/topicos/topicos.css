@@ -1,0 +1,13 @@
+@import url('./topicos-titulo.css');
+@import url('./topicos-lista.css');
+@import url('./topicos-item.css');
+@import url('./topicos-link.css');
+
+.topicos {
+    align-items: center;
+    background: var(--azul-degrade);
+    display: flex;
+    flex-direction: column;
+    padding: var(--text-4xl) 0;
+    text-align: center;
+}

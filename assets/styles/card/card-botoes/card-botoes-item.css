@@ -1,0 +1,9 @@
+.card__botoes__item {
+    margin: 0 var(--text-1xs);
+}
+
+.card__botoes__item > button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}

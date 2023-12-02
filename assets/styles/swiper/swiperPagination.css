@@ -1,0 +1,4 @@
+.swiper-pagination {
+    position: initial;
+    margin: var(--text-xs) 0 var(--text-base) 0;
+}

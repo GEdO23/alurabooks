@@ -1,0 +1,13 @@
+@import url('./cabecalho-opcoes-item.css');
+@import url('./cabecalho-opcoes-link.css');
+
+#cabecalho__opcoes {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    #cabecalho__opcoes {
+        display: flex;
+        align-items: center;
+    }
+}

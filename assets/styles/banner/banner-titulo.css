@@ -1,0 +1,4 @@
+.banner__titulo {
+    font-size: var(--text-lg);
+    font-weight: 700;
+}
