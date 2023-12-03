@@ -1,9 +1,16 @@
+@import url('./rodape-titulo.css');
 @import url('./rodape-grupos.css');
 
 #rodape {
     background: #F9F9F9;
-    border-top: 1px solid var(--cinza);
+    border-top: 1px solid #858585;
     display: flex;
     justify-content: space-between;
-    padding: var(--text-base) 3.125rem var(--text-2xl) var(--text-2xl);
+    padding: var(--text-base) 0 var(--text-2xl) var(--text-2xl);
+}
+
+@media screen and (min-width: 1024px) {
+    #rodape {
+        padding: 3.5rem 3.75rem 4.375rem var(--text-2xl);
+    }
 }

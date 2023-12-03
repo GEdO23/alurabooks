@@ -1,6 +1,5 @@
 .grupo__titulo {
-    color: var(--cinza);
+    color: #858585;
     font-size: var(--text-sm);
     text-transform: uppercase;
-    margin-bottom: var(--text-2xl);
 }

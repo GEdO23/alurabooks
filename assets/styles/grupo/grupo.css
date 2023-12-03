@@ -1,3 +1,9 @@
 @import url('./grupo-titulo.css');
 @import url('./grupo-lista.css');
 @import url('./grupo-item.css');
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--text-2xl);
+}
