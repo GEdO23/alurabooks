@@ -1,5 +1,7 @@
 @import url('./cabecalho-container.css');
 @import url('./cabecalho-titulo.css');
+@import url('./cabecalho-link.css');
+@import url('./cabecalho-link-text.css');
 
 #cabecalho {
     align-items: center;
