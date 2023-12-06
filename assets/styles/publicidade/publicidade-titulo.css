@@ -16,3 +16,9 @@
         padding-top: 3.125rem;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .publicidade__titulo {
+        font-size: 2rem;
+    }
+}

@@ -8,7 +8,6 @@
     box-shadow: 0 var(--text-3xs) var(--text-3xs) rgba(0, 0, 0, 0.25);
     margin: var(--text-xl) var(--text-2xl);
     padding: var(--text-base);
-    padding-bottom: var(--text-2xl);
 }
 
 @media screen and (min-width: 1024px) {
@@ -17,5 +16,12 @@
         flex-direction: column;
         gap: 1.25rem;
         margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .card {
+        max-width: 36.75rem;
+        margin: 0;
     }
 }

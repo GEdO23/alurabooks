@@ -18,7 +18,7 @@
     text-align: center;
 }
 
-@media (min-width: 400px) {
+@media screen and (min-width: 400px) {
     .banner__pesquisa::placeholder {
         background: url('/assets/img/Pesquisa.svg') no-repeat var(--text-base);
         background-size: contain;
@@ -26,11 +26,21 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .banner__pesquisa {
+        max-width: 29.75rem;
+    }
+
     .banner__pesquisa::placeholder {
         background-position: 5rem center;
     }
+}
 
+@media screen and (min-width: 1728px) {
     .banner__pesquisa {
-        max-width: 29.75rem;
+        max-width: 36rem;
+    }
+
+    .banner__pesquisa::placeholder {
+        background-position: 8rem center;
     }
 }
