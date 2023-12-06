@@ -1,0 +1,22 @@
+@import url('./opcoes-titulo.css');
+@import url('./opcoes-item.css');
+@import url('./opcoes-link.css');
+
+#opcoes,
+#opcoes__menu {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    #opcoes {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    #opcoes {
+        margin-right: auto;
+        margin-left: 57px;
+    }
+}

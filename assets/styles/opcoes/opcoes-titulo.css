@@ -1,0 +1,11 @@
+
+#opcoes__menu:checked ~ #opcoes__menu--label {
+    background: var(--azul-degrade);
+}
+
+#opcoes__menu:checked ~ #opcoes__menu--label > #opcoes__titulo {
+    background: var(--branco);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

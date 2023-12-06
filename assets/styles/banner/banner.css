@@ -13,3 +13,9 @@
     padding: var(--text-4xl) var(--text-2xl);
     text-align: center;
 }
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        padding: 5rem 0;
+    }
+}

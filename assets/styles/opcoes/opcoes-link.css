@@ -1,5 +1,5 @@
 @media screen and (min-width: 1024px) {
-    .cabecalho__opcoes__link {
+    .opcoes__link {
         color: var(--preto);
         text-decoration: none;
     }

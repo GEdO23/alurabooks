@@ -29,7 +29,7 @@
                 </label>
 
                 <!-- Lista do Menu -->
-                <ul id="menu__lista">
+                <ul class="menu__lista">
                     <li id="menu__lista__titulo">Categorias</li>
 
                     <li class="menu__lista__item">
@@ -56,10 +56,32 @@
                 </div>
             </div>
 
-            <ul id="cabecalho__opcoes">
-                <li class="cabecalho__opcoes__item">Categorias</li>
-                <li class="cabecalho__opcoes__item"><a href="#" class="cabecalho__opcoes__link">Favoritos</a></li>
-                <li class="cabecalho__opcoes__item"><a href="#" class="cabecalho__opcoes__link">Minha estante</a></li>
+            <ul id="opcoes">
+                <input id="opcoes__menu" type="checkbox">
+                <label for="opcoes__menu" id="opcoes__menu--label">
+                    <li id="opcoes__titulo" class="opcoes__item">Categorias</li>
+                </label>
+
+                <!-- Lista do Menu -->
+                <ul class="menu__lista">
+                    <li class="menu__lista__item">
+                        <a href="#" class="menu__lista__link">Programação</a>
+                    </li>
+                    <li class="menu__lista__item">
+                        <a href="#" class="menu__lista__link">Front-end</a>
+                    </li>
+                    <li class="menu__lista__item">
+                        <a href="#" class="menu__lista__link">Infraestrutura</a>
+                    </li>
+                    <li class="menu__lista__item">
+                        <a href="#" class="menu__lista__link">Business</a>
+                    </li>
+                    <li class="menu__lista__item">
+                        <a href="#" class="menu__lista__link">Design & UX</a>
+                    </li>
+                </ul>
+                <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+                <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
             </ul>
             
             <ul class="cabecalho__container">
@@ -67,10 +89,16 @@
                     <a href="#"><img src="/assets/img/Favoritos.svg" alt="Meus favoritos" class="imagem"></a>
                 </li>
                 <li>
-                    <a href="#"><img src="/assets/img/Compras.svg" alt="Carrinho de compras" class="imagem"></a>
+                    <a href="#" class="cabecalho__link">
+                        <img src="/assets/img/Compras.svg" alt="Carrinho de compras" class="imagem">
+                        <p class="cabecalho__link__text">Minha sacola</p>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="/assets/img/Usuario.svg" alt="Meu perfil" class="imagem"></a>
+                    <a href="#" class="cabecalho__link">
+                        <img src="/assets/img/Usuario.svg" alt="Meu perfil" class="imagem">
+                        <p class="cabecalho__link__text">Meu perfil</p>
+                    </a>
                 </li>
             </ul>
         </header>
@@ -102,7 +130,7 @@
                     </section>
                     <section class="card">
                         <div class="card__descricao">
-                            <div>
+                            <div class="card__text-container">
                                 <h3 class="card__descricao__titulo">Talvez você também se interesse por...</h3>
                                 <h2 class="card__descricao__subtitulo">Angular 11 e Firebase</h2>
                                 <p class="card__descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
@@ -163,7 +191,7 @@
         
                     <section class="card">
                         <div class="card__descricao">
-                            <div>
+                            <div class="card__text-container">
                                 <ul class="rating">
                                     <li><img src="/assets/img/Star.svg" alt="Estrela"></li>
                                     <li><img src="/assets/img/Star.svg" alt="Estrela"></li>
@@ -215,8 +243,8 @@
 
         <footer id="rodape">
             <h2 id="rodape__titulo">Grupo Alura</h2>
-            <div id="rodape__grupos">
-                <section class="grupo">
+            <ul id="rodape__grupos">
+                <li class="grupo">
                     <h3 class="grupo__titulo">Educação</h3>
                     <ul class="grupo__lista">
                         <li class="grupo__item">
@@ -228,9 +256,9 @@
                             Casa do Código
                         </li>
                     </ul>
-                </section>
+                </li>
 
-                <section class="grupo">
+                <li class="grupo">
                     <h3 class="grupo__titulo">Educação Online</h3>
                     <ul class="grupo__lista">
                         <li class="grupo__item">
@@ -262,9 +290,9 @@
                             PM3
                         </li>
                     </ul>
-                </section>
+                </li>
 
-                <section class="grupo">
+                <li class="grupo">
                     <h3 class="grupo__titulo">Comunidade</h3>
                     <ul class="grupo__lista">
                         <li class="grupo__item">
@@ -296,8 +324,8 @@
                             GUJ
                         </li>
                     </ul>
-                </section>
-            </div>
+                </li>
+            </ul>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -310,14 +338,16 @@
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev'
                 },
-                autoplay: {
-                    delay: 5000,
-                },
+                // autoplay: {
+                //     delay: 5000,
+                // },
                 pagination: {
                     el: '.swiper-pagination',
                     type: 'bullets',
                     clickable: true
-                }
+                },
+                grabCursor: true,
+                centeredSlides: true,
             });
         </script>
     </body>

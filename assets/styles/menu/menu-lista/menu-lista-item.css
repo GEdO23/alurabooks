@@ -2,3 +2,20 @@
     background: var(--branco);
     padding:var(--text-base);
 }
+
+@media screen and (min-width: 1024px) {
+    .menu__lista__item {
+        padding: var(--text-base) var(--text-2xl);
+    }
+
+    .menu__lista__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .menu__lista__item:hover>.menu__lista__link {
+        background: var(--branco);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

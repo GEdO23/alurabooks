@@ -1,3 +1,16 @@
 #rodape__grupos {
     display: none;
 }
+
+@media screen and (min-width: 1024px) {
+    #rodape__grupos {
+        display: flex;
+        gap: 5vw;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    #rodape__grupos {
+        gap: 11.25rem;
+    }
+}

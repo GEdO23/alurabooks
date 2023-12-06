@@ -5,7 +5,13 @@
 
 .card__descricao {
     display: flex;
-    gap: var(--text-2xl);
+    gap: var(--text-sm);
     justify-content: space-between;
     margin-bottom: var(--text-3xs);
+}
+
+@media screen and (min-width: 1024px) {
+    .card__descricao {
+        gap: 5rem;
+    }
 }

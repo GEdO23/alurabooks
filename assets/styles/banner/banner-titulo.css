@@ -2,3 +2,9 @@
     font-size: var(--text-lg);
     font-weight: 700;
 }
+
+@media screen and (min-width: 1024px) {
+    .banner__titulo {
+        font-size: 2.25rem;
+    }
+}

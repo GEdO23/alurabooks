@@ -2,3 +2,10 @@
     color: var(--laranja);
     font-weight: 700;
 }
+
+@media screen and (min-width: 1728px) {
+    .card__descricao__titulo {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}

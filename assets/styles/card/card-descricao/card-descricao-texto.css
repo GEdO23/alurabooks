@@ -2,3 +2,10 @@
     color: #262626;
     font-size: var(--text-sm);
 }
+
+@media screen and (min-width: 1024px) {
+    .card__descricao__texto {
+        font-size: var(--text-base);
+        width: 20rem;
+    }
+}

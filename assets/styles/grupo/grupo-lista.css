@@ -2,4 +2,5 @@
     display: flex;
     flex-direction: column;
     gap: var(--text-base);
+    min-width: 12.5rem;
 }

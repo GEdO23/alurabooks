@@ -7,3 +7,10 @@
     line-height: var(--text-xl);
     text-decoration: none;
 }
+
+@media screen and (min-width: 1024px) {
+    .topicos__link {
+        font-size: var(--text-2xl);
+        padding: var(--text-2xl) 2rem;
+    }
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/reset.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        
+        <link rel="stylesheet" href="/styles.css">
+        
+        <link rel="icon" href="/assets/img/Logo.svg">
+
+        <title>Teste - AluraBooks</title>
+    </head>
+    <body>
+        <style>
+            #test-container {
+                width: 100%;
+                text-align: center;
+                padding: 2rem 0;
+                background: #f8f8f8;
+                border-bottom: 1px solid #333;
+                margin-bottom: 2rem;
+            }
+        </style>
+
+        <div id="test-container">
+            <h1 class="cabecalho__titulo">Made with Javascript</h1>
+
+        </div>
+        <div class="publicidade__conteudo">
+            <section class="card" id="cardAngular"></section>
+            
+        </div>
+        <div class="publicidade__conteudo">
+            <section class="card" id="cardJuliana"></section>
+            
+        </div>
+        <section class="topicos">
+            <ul class="topicos__lista" id="topicos--visitados-recentemente"></ul>
+        </section>
+
+        <script>
+            const cards = [
+                {
+                    'id': 1,
+                    'type': 'book',
+                    'textContainer': {
+                        'titulo': "Talvez você também se interesse por...",
+                        'subtitulo': "Angular 11 e Firebase",
+                        'texto': "Construindo uma aplicação integrada com a plataforma do Google."
+                    },
+                    'image': {
+                        'source': "/assets/img/Angular.svg",
+                        'alternateText': "Angular"
+                    },
+                    'buttons': [
+                        {
+                            'source': "/assets/img/Favoritos.svg",
+                            'alternateText': "Favoritar livro"
+                        },
+                        {
+                            'source': "/assets/img/Compras.svg",
+                            'alternateText': "Adcionar no carrinho de compras"
+                        }
+                    ],
+                    'anchor': {
+                        'url': "#",
+                        'text': "Saiba mais"
+                    }
+                },
+                {
+                    'id': 2,
+                    'type': 'author',
+                    'textContainer': {
+                        'rating': 5,
+                        'titulo': "Autora do Mês",
+                        'subtitulo': "Juliana Agarikov",
+                        'texto': "Analista de sistemas e escritora, Juliana é especialista em Front-End."
+                    },
+                    'image': {
+                        'source': "/assets/img/Perfil-escritora.svg",
+                        'alternateText': "Foto da Juliana Agarikov: mulher jovem negra sorrindo, com cabelo escuro trançado, vestindo uma roupa laranja"
+                    },
+                    'buttons': [
+                        {
+                            'source': "/assets/img/Favoritos.svg",
+                            'alternateText': "Favoritar autora"
+                        }
+                    ],
+                    'anchor': {
+                        'url': "#",
+                        'text': "Saiba mais"
+                    }
+                }
+            ];
+
+            const topicos = [
+                {
+                    'id': 1,
+                    'url': "#",
+                    'text': "Android"
+                },
+                {
+                    'id': 2,
+                    'url': "#",
+                    'text': "Marketing Digital"
+                },
+                {
+                    'id': 3,
+                    'url': "#",
+                    'text': "Agile"
+                },
+                {
+                    'id': 4,
+                    'url': "#",
+                    'text': "Startups"
+                },
+                {
+                    'id': 5,
+                    'url': "#",
+                    'text': "HTML & CSS"
+                },
+                {
+                    'id': 6,
+                    'url': "#",
+                    'text': "Python"
+                },
+                {
+                    'id': 7,
+                    'url': "#",
+                    'text': "OO"
+                },
+                {
+                    'id': 8,
+                    'url': "#",
+                    'text': "Java"
+                }
+            ];
+
+            function createCard(id, idName) {
+                const card = cards.find((card)=> card.id === id);
+
+                const cardSection = document.getElementById(idName);
+                const cardDescricao = document.createElement('div');
+                const cardTextContainer = document.createElement('div');
+
+                if(card.type === 'author') {
+                    const cardRating = document.createElement('ul');
+                    cardRating.className = 'rating';
+                    for(let i=0; i<card.textContainer.rating; i++) {
+                        const cardRatingItem = document.createElement('li');
+                        const cardRatingImage = document.createElement('img');
+                        cardRatingImage.src = '/assets/img/Star.svg';
+                        cardRatingImage.alt = 'Estrela';
+                        cardRatingItem.appendChild(cardRatingImage);
+                        cardRating.appendChild(cardRatingItem);
+                    }
+                    cardTextContainer.appendChild(cardRating);
+                };
+
+                const cardDescricaoTitulo = document.createElement('h3');
+                cardDescricaoTitulo.innerHTML = card.textContainer.titulo;
+                cardDescricaoTitulo.className = 'card__descricao__titulo';
+                cardTextContainer.appendChild(cardDescricaoTitulo);
+                
+                const cardDescricaoSubtitulo = document.createElement('h2');
+                cardDescricaoSubtitulo.innerHTML = card.textContainer.subtitulo;
+                cardDescricaoSubtitulo.className = 'card__descricao__subtitulo';
+                cardTextContainer.appendChild(cardDescricaoSubtitulo);
+                
+                const cardDescricaoTexto = document.createElement('p');
+                cardDescricaoTexto.innerHTML = card.textContainer.texto;
+                cardDescricaoTexto.className = 'card__descricao__texto';
+                cardTextContainer.appendChild(cardDescricaoTexto);
+
+                cardTextContainer.className = 'card__text-container';
+                cardDescricao.appendChild(cardTextContainer);
+
+                const cardImage = document.createElement('img');
+                cardImage.src = card.image.source;
+                cardImage.alt = card.image.alternateText;
+                cardImage.className = 'card__descricao__imagem';
+                cardDescricao.appendChild(cardImage);
+
+                cardDescricao.className = 'card__descricao';
+                cardSection.appendChild(cardDescricao);
+
+                const cardBotoes = document.createElement('div');
+                
+                const cardBotoesBtnContainer = document.createElement('ul');
+                
+                for(let i=0; i<card.buttons.length; i++) {
+                    const cardBotaoItem = document.createElement('li');
+
+                    const cardBotao = document.createElement('button');
+                    const cardBotaoImage = document.createElement('img');
+                    cardBotaoImage.src = card.buttons[i].source;
+                    cardBotaoImage.alt = card.buttons[i].alternateText;
+
+                    cardBotao.appendChild(cardBotaoImage);
+                    cardBotaoItem.appendChild(cardBotao);
+                    
+                    cardBotaoItem.className = 'card__botoes__item';
+                    cardBotoesBtnContainer.appendChild(cardBotaoItem);
+                }
+                
+                cardBotoesBtnContainer.className = 'card__botoes__btn-container';
+                cardBotoes.appendChild(cardBotoesBtnContainer);
+
+                const cardAnchor = document.createElement('a');
+                cardAnchor.href = card.anchor.url;
+                cardAnchor.innerHTML = card.anchor.text;
+                cardAnchor.className = 'card__botoes__ancora';
+                cardBotoes.appendChild(cardAnchor);
+
+                cardBotoes.className = 'card__botoes';
+                cardSection.appendChild(cardBotoes);
+            };
+
+            function createTopicos(idName) {
+                const topicosList = document.getElementById(idName);
+
+                for(let i=0; i<topicos.length; i++) {
+                    const topicosItem = document.createElement('li');
+                    
+                    const topicoAnchor = document.createElement('a');
+                    topicoAnchor.href = topicos[i].url;
+                    topicoAnchor.innerHTML = topicos[i].text;
+                    topicoAnchor.className = 'topicos__link';
+                    topicosItem.appendChild(topicoAnchor);
+                    
+                    topicosItem.className = 'topicos__item';
+                    topicosList.appendChild(topicosItem);
+                };
+            };
+
+            createCard(1, "cardAngular");
+            createCard(2, "cardJuliana");
+            createTopicos("topicos--visitados-recentemente");
+        </script>
+    </body>
+</html>

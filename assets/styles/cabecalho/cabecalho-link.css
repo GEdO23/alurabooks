@@ -1,0 +1,6 @@
+.cabecalho__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: var(--text-1xs);
+}

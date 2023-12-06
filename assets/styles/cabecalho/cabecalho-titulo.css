@@ -7,9 +7,8 @@
     .cabecalho__titulo {
         display: inline;
         font-family: var(--font-secundaria);
-        font-size: 1.875rem;
+        font-size: 30px;
         font-weight: 400;
-        padding-bottom: 0.125rem;
     }
 
     .cabecalho__titulo--destaque {

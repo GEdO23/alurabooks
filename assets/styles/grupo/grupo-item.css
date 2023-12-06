@@ -1,7 +1,7 @@
 .grupo__item {
-    color: #474646;
-    font-size: var(--text-sm);
-    display: flex;
     align-items: center;
+    color: #474646;
+    display: flex;
     gap: var(--text-2xs);
+    font-size: var(--text-sm);
 }

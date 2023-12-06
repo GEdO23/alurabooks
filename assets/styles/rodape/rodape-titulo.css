@@ -1,0 +1,10 @@
+.rodape__titulo {
+    color: var(--preto);
+    font-size: var(--text-base);
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape__titulo {
+        font-size: var(--text-2xl);
+    }
+}

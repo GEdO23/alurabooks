@@ -6,3 +6,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media screen and (min-width: 1024px) {
+    .contato__titulo {
+        font-size: var(--text-2xl);
+        line-height: var(--text-4xl);
+    }
+}

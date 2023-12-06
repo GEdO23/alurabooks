@@ -1,16 +1,45 @@
 .swiper-button {
-    color: var(--branco);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 3rem;
-    background: var(--azul-degrade);
-    border-radius: 100%;
-    transition: .5s ease-in-out;
+    display: none;
 }
 
-.swiper-button::after {
-    font-size: var(--text-xs);
-    font-weight: 700;
+
+@media screen and (min-width: 1024px) {
+
+    .swiper-button {
+        color: var(--branco);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 7%;
+        height: 11.25%;
+        background: var(--azul-degrade);
+        border-radius: 100%;
+        transition: .5s ease-in-out;
+        top: 55%;
+        box-shadow: 0 var(--text-3xs) var(--text-3xs) rgba(0, 0, 0, 0.25);
+    }
+
+    .swiper-button::after {
+        font-size: 100%;
+        font-weight:900;
+    }
+    
+    .swiper-button-prev {
+        left: 0%;
+    }
+    .swiper-button-next {
+        right: 0%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .swiper-button {
+        width: 6.5%;
+        height: 15%;
+        top: 60%;
+    }
+
+    .swiper-button::after {
+        font-size: 80%;
+    }
 }

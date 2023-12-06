@@ -3,7 +3,22 @@
     color: var(--laranja);
     font-size: var(--text-lg);
     font-weight: 700;
-    padding: var(--text-xl) 0 var(--text-2xs) 0;
+    padding-bottom: var(--text-2xs);
+    padding-top: var(--text-xl);
     text-align: center;
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+    .publicidade__titulo {
+        font-size: 1.625rem;
+        padding-bottom: 1rem;
+        padding-top: 3.125rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .publicidade__titulo {
+        font-size: 2rem;
+    }
 }
