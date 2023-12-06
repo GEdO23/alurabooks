@@ -1,12 +1,19 @@
 .topicos__titulo {
     color: var(--branco);
-    font-weight: 300;
+    font-weight:300;
     padding-bottom: var(--text-base);
 }
 
 @media screen and (min-width: 1024px) {
     .topicos__titulo {
         font-size: var(--text-2xl);
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .topicos__titulo {
+        font-size: 2rem;
         padding-bottom: 2.5rem;
     }
 }
