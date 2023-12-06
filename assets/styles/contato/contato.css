@@ -19,3 +19,10 @@
         padding-bottom: 3rem;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        gap: 2rem;
+        padding: 4rem auto;
+    }
+}

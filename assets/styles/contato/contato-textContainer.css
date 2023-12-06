@@ -4,3 +4,9 @@
     gap: var(--text-2xs);
     max-width: 300px;
 }
+
+@media screen and (min-width: 1728px) {
+    .contato__text-container {
+        max-width: 392px;
+    }
+}
